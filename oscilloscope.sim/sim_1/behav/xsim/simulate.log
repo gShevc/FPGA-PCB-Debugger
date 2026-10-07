@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+PASS: all checks passed.
+$finish called at time : 66 ns : File "C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.srcs/sim_1/new/tb_top.v" Line 54

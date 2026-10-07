@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-PnpDevice -PresentOnly | Where-Object { $_.Class -eq 'Ports' -or $_.FriendlyName -match 'FTDI|Serial|USB Serial|Digilent|JTAG|FT2232' } | Format-Table Status, Class, FriendlyName, InstanceId -AutoSize | Out-String -Width 250; [System.IO.Ports.SerialPort]::GetPortNames\\(\\))",
+      "PowerShell(Get-PnpDevice | Where-Object { $_.InstanceId -match 'VID_0403|FTDIBUS' } | Format-Table Status, Present, Class, FriendlyName, InstanceId -AutoSize | Out-String -Width 250; Get-PnpDevice -PresentOnly | Where-Object { $_.Status -ne 'OK' } | Format-Table Status, Class, FriendlyName, InstanceId -AutoSize | Out-String -Width 250)"
+    ]
+  }
+}

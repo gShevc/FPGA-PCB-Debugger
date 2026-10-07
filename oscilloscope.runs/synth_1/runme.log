@@ -1,0 +1,342 @@
+
+*** Running vivado
+    with args -log CPU_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU_wrapper.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon Oct  5 19:21:26 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source CPU_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 531.656 ; gain = 218.336
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.srcs/utils_1/imports/synth_1/top.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top CPU_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22628
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1342.262 ; gain = 540.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CPU_wrapper' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/hdl/CPU_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:13]
+INFO: [Synth 8-6157] synthesizing module 'CPU_axi_bram_ctrl_0_0' [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.runs/synth_1/.Xil/Vivado-38612-Gehrman/realtime/CPU_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_axi_bram_ctrl_0_0' (0#1) [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.runs/synth_1/.Xil/Vivado-38612-Gehrman/realtime/CPU_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'CPU_axi_gpio_0_0' [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.runs/synth_1/.Xil/Vivado-38612-Gehrman/realtime/CPU_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_axi_gpio_0_0' (0#1) [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.runs/synth_1/.Xil/Vivado-38612-Gehrman/realtime/CPU_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'CPU_axi_interconnect_0_0' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:468]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_LGON80' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:1173]
+INFO: [Synth 8-6157] synthesizing module 'CPU_axi_interconnect_0_imp_auto_pc_0' [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.runs/synth_1/.Xil/Vivado-38612-Gehrman/realtime/CPU_axi_interconnect_0_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_axi_interconnect_0_imp_auto_pc_0' (0#1) [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.runs/synth_1/.Xil/Vivado-38612-Gehrman/realtime/CPU_axi_interconnect_0_imp_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'CPU_axi_interconnect_0_imp_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:1354]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'CPU_axi_interconnect_0_imp_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:1354]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'CPU_axi_interconnect_0_imp_auto_pc_0' has 60 connections declared, but only 58 given [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:1354]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_LGON80' (0#1) [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:1173]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_146ENTH' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:1415]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_146ENTH' (0#1) [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:1415]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1RCC4A2' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:1638]
+INFO: [Synth 8-6157] synthesizing module 'CPU_axi_interconnect_0_imp_auto_pc_1' [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.runs/synth_1/.Xil/Vivado-38612-Gehrman/realtime/CPU_axi_interconnect_0_imp_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_axi_interconnect_0_imp_auto_pc_1' (0#1) [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.runs/synth_1/.Xil/Vivado-38612-Gehrman/realtime/CPU_axi_interconnect_0_imp_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'CPU_axi_interconnect_0_imp_auto_pc_1' is unconnected for instance 'auto_pc' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:1876]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'CPU_axi_interconnect_0_imp_auto_pc_1' is unconnected for instance 'auto_pc' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:1876]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'CPU_axi_interconnect_0_imp_auto_pc_1' has 79 connections declared, but only 77 given [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:1876]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1RCC4A2' (0#1) [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:1638]
+INFO: [Synth 8-6157] synthesizing module 'CPU_axi_interconnect_0_imp_xbar_0' [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.runs/synth_1/.Xil/Vivado-38612-Gehrman/realtime/CPU_axi_interconnect_0_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_axi_interconnect_0_imp_xbar_0' (0#1) [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.runs/synth_1/.Xil/Vivado-38612-Gehrman/realtime/CPU_axi_interconnect_0_imp_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_arqos' does not match port width (8) of module 'CPU_axi_interconnect_0_imp_xbar_0' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:1102]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_arregion' does not match port width (8) of module 'CPU_axi_interconnect_0_imp_xbar_0' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:1104]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_awqos' does not match port width (8) of module 'CPU_axi_interconnect_0_imp_xbar_0' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:1114]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_awregion' does not match port width (8) of module 'CPU_axi_interconnect_0_imp_xbar_0' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:1116]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_axi_interconnect_0_0' (0#1) [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:468]
+INFO: [Synth 8-6157] synthesizing module 'CPU_blk_mem_gen_0_0' [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.runs/synth_1/.Xil/Vivado-38612-Gehrman/realtime/CPU_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_blk_mem_gen_0_0' (0#1) [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.runs/synth_1/.Xil/Vivado-38612-Gehrman/realtime/CPU_blk_mem_gen_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'CPU_blk_mem_gen_0_0' is unconnected for instance 'blk_mem_gen_0' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:377]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'CPU_blk_mem_gen_0_0' is unconnected for instance 'blk_mem_gen_0' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:377]
+WARNING: [Synth 8-7023] instance 'blk_mem_gen_0' of module 'CPU_blk_mem_gen_0_0' has 16 connections declared, but only 14 given [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:377]
+INFO: [Synth 8-6157] synthesizing module 'CPU_proc_sys_reset_0_0' [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.runs/synth_1/.Xil/Vivado-38612-Gehrman/realtime/CPU_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_proc_sys_reset_0_0' (0#1) [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.runs/synth_1/.Xil/Vivado-38612-Gehrman/realtime/CPU_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'CPU_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:392]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'CPU_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:392]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'CPU_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:392]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'CPU_proc_sys_reset_0_0' has 10 connections declared, but only 7 given [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:392]
+INFO: [Synth 8-6157] synthesizing module 'CPU_processing_system7_0_0' [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.runs/synth_1/.Xil/Vivado-38612-Gehrman/realtime/CPU_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_processing_system7_0_0' (0#1) [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.runs/synth_1/.Xil/Vivado-38612-Gehrman/realtime/CPU_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'CPU_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:402]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'CPU_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:402]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'CPU_processing_system7_0_0' has 65 connections declared, but only 63 given [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (0#1) [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/synth/CPU.v:13]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_wrapper' (0#1) [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/hdl/CPU_wrapper.v:13]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1RCC4A2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1RCC4A2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_146ENTH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_146ENTH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_146ENTH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_146ENTH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_LGON80 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_LGON80 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1469.988 ; gain = 668.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1469.988 ; gain = 668.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1469.988 ; gain = 668.016
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1469.988 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/ip/CPU_processing_system7_0_0/CPU_processing_system7_0_0/CPU_processing_system7_0_0_in_context.xdc] for cell 'CPU_i/processing_system7_0'
+Finished Parsing XDC File [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/ip/CPU_processing_system7_0_0/CPU_processing_system7_0_0/CPU_processing_system7_0_0_in_context.xdc] for cell 'CPU_i/processing_system7_0'
+Parsing XDC File [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/ip/CPU_proc_sys_reset_0_0/CPU_proc_sys_reset_0_0/CPU_proc_sys_reset_0_0_in_context.xdc] for cell 'CPU_i/proc_sys_reset_0'
+Finished Parsing XDC File [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/ip/CPU_proc_sys_reset_0_0/CPU_proc_sys_reset_0_0/CPU_proc_sys_reset_0_0_in_context.xdc] for cell 'CPU_i/proc_sys_reset_0'
+Parsing XDC File [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/ip/CPU_axi_interconnect_0_imp_xbar_0/CPU_axi_interconnect_0_imp_xbar_0/CPU_axi_interconnect_0_imp_xbar_0_in_context.xdc] for cell 'CPU_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/ip/CPU_axi_interconnect_0_imp_xbar_0/CPU_axi_interconnect_0_imp_xbar_0/CPU_axi_interconnect_0_imp_xbar_0_in_context.xdc] for cell 'CPU_i/axi_interconnect_0/xbar'
+Parsing XDC File [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/ip/CPU_axi_interconnect_0_imp_auto_pc_1/CPU_axi_interconnect_0_imp_auto_pc_1/CPU_axi_interconnect_0_imp_auto_pc_1_in_context.xdc] for cell 'CPU_i/axi_interconnect_0/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/ip/CPU_axi_interconnect_0_imp_auto_pc_1/CPU_axi_interconnect_0_imp_auto_pc_1/CPU_axi_interconnect_0_imp_auto_pc_1_in_context.xdc] for cell 'CPU_i/axi_interconnect_0/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/ip/CPU_axi_interconnect_0_imp_auto_pc_0/CPU_axi_interconnect_0_imp_auto_pc_0/CPU_axi_interconnect_0_imp_auto_pc_0_in_context.xdc] for cell 'CPU_i/axi_interconnect_0/m00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/ip/CPU_axi_interconnect_0_imp_auto_pc_0/CPU_axi_interconnect_0_imp_auto_pc_0/CPU_axi_interconnect_0_imp_auto_pc_0_in_context.xdc] for cell 'CPU_i/axi_interconnect_0/m00_couplers/auto_pc'
+Parsing XDC File [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/ip/CPU_axi_gpio_0_0/CPU_axi_gpio_0_0/CPU_axi_gpio_0_0_in_context.xdc] for cell 'CPU_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/ip/CPU_axi_gpio_0_0/CPU_axi_gpio_0_0/CPU_axi_gpio_0_0_in_context.xdc] for cell 'CPU_i/axi_gpio_0'
+Parsing XDC File [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/ip/CPU_blk_mem_gen_0_0/CPU_blk_mem_gen_0_0/CPU_blk_mem_gen_0_0_in_context.xdc] for cell 'CPU_i/blk_mem_gen_0'
+Finished Parsing XDC File [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/ip/CPU_blk_mem_gen_0_0/CPU_blk_mem_gen_0_0/CPU_blk_mem_gen_0_0_in_context.xdc] for cell 'CPU_i/blk_mem_gen_0'
+Parsing XDC File [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/ip/CPU_axi_bram_ctrl_0_0/CPU_axi_bram_ctrl_0_0/CPU_axi_bram_ctrl_0_0_in_context.xdc] for cell 'CPU_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [c:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.gen/sources_1/bd/CPU/ip/CPU_axi_bram_ctrl_0_0/CPU_axi_bram_ctrl_0_0/CPU_axi_bram_ctrl_0_0_in_context.xdc] for cell 'CPU_i/axi_bram_ctrl_0'
+Parsing XDC File [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.srcs/constrs_1/new/master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sysclk'. [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.srcs/constrs_1/new/master.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'sysclk'. [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.srcs/constrs_1/new/master.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.srcs/constrs_1/new/master.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.srcs/constrs_1/new/master.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.srcs/constrs_1/new/master.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.srcs/constrs_1/new/master.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.srcs/constrs_1/new/master.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.srcs/constrs_1/new/master.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.srcs/constrs_1/new/master.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.srcs/constrs_1/new/master.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.srcs/constrs_1/new/master.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.srcs/constrs_1/new/master.xdc:37]
+Finished Parsing XDC File [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.srcs/constrs_1/new/master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.srcs/constrs_1/new/master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/CPU_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1486.164 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1486.164 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'CPU_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 1486.695 ; gain = 684.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 1486.695 ; gain = 684.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 1486.695 ; gain = 684.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.srcs/utils_1/imports/synth_1/top.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 1486.695 ; gain = 684.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 1486.695 ; gain = 684.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 1486.695 ; gain = 684.723
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port M00_ACLK in module CPU_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module CPU_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module CPU_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module CPU_axi_interconnect_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 1486.695 ; gain = 684.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:52 . Memory (MB): peak = 1644.770 ; gain = 842.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:52 . Memory (MB): peak = 1645.691 ; gain = 843.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:52 . Memory (MB): peak = 1655.617 ; gain = 853.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1904.293 ; gain = 1102.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1904.293 ; gain = 1102.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1904.293 ; gain = 1102.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1904.293 ; gain = 1102.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1904.293 ; gain = 1102.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1904.293 ; gain = 1102.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------------+----------+
+|      |BlackBox name                        |Instances |
++------+-------------------------------------+----------+
+|1     |CPU_axi_bram_ctrl_0_0                |         1|
+|2     |CPU_axi_gpio_0_0                     |         1|
+|3     |CPU_axi_interconnect_0_imp_xbar_0    |         1|
+|4     |CPU_axi_interconnect_0_imp_auto_pc_0 |         1|
+|5     |CPU_axi_interconnect_0_imp_auto_pc_1 |         1|
+|6     |CPU_blk_mem_gen_0_0                  |         1|
+|7     |CPU_proc_sys_reset_0_0               |         1|
+|8     |CPU_processing_system7_0_0           |         1|
++------+-------------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------+------+
+|      |Cell                               |Count |
++------+-----------------------------------+------+
+|1     |CPU_axi_bram_ctrl_0                |     1|
+|2     |CPU_axi_gpio_0                     |     1|
+|3     |CPU_axi_interconnect_0_imp_auto_pc |     2|
+|5     |CPU_axi_interconnect_0_imp_xbar    |     1|
+|6     |CPU_blk_mem_gen_0                  |     1|
+|7     |CPU_proc_sys_reset_0               |     1|
+|8     |CPU_processing_system7_0           |     1|
+|9     |IBUF                               |     4|
+|10    |IOBUF                              |     4|
++------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1904.293 ; gain = 1102.320
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:54 . Memory (MB): peak = 1904.293 ; gain = 1085.613
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1904.293 ; gain = 1102.320
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1904.293 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1917.055 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+Synth Design complete | Checksum: 50105a85
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 46 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:13 . Memory (MB): peak = 1917.055 ; gain = 1347.680
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1917.055 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/germa/Documents/projects/FPGA/New folder/oscilloscope/oscilloscope.runs/synth_1/CPU_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file CPU_wrapper_utilization_synth.rpt -pb CPU_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  5 19:23:10 2026...
